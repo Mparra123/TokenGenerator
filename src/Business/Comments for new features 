@@ -1,0 +1,11 @@
+This section is for notes for future features.
+
+VERSION#1 Branch NewVersion#1.2
+Improve security matters for commit to github
+Improve code for password selection and select static number of characters or numbers.
+Add a static number for upper, lower, special, digits characters.
+
+VERSION#2 Branch NewVersion#2.0
+Renew the interface in order to have the customer select the quantity of characters.
+Also if he wants special characters or a simple password with just upper and lower characters.
+Add a little menu with the options for the new feature above described.

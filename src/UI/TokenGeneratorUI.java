@@ -11,7 +11,7 @@ public class TokenGeneratorUI extends JFrame {
 
     private JTextField tokenField;
     private JButton generateButton;
-    private TokenGeneratorBusiness tokenGeneratorBusiness;
+    private final TokenGeneratorBusiness tokenGeneratorBusiness;
 
     public TokenGeneratorUI() {
         // Inicialización del negocio
@@ -57,7 +57,7 @@ public class TokenGeneratorUI extends JFrame {
     }
 
     private void generateToken() {
-        String token = tokenGeneratorBusiness.createToken(8);  // Genera un token de "n" caracteres
+        String token = tokenGeneratorBusiness.createToken(2,2,2,2);  // Genera un token de "n" caracteres
         tokenField.setText(token);
     }
 

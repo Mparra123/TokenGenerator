@@ -3,7 +3,7 @@ package Business;
 import Data.TokenGeneradorData;
 
 public class TokenGeneratorBusiness {
-    private TokenGeneradorData tokenGeneradorData;
+    private final TokenGeneradorData tokenGeneradorData;
 
 
     public TokenGeneratorBusiness (){
@@ -11,8 +11,10 @@ public class TokenGeneratorBusiness {
     }
 
 
-    public String createToken(int length) {
+    public String createToken(int upper,int lower,int digits, int special) {
         // Aquí puedes añadir lógica adicional, como validaciones, si es necesario.
-        return tokenGeneradorData.generadorToken(length);
+
+        //hace connecion con capa datos.
+        return tokenGeneradorData.generadorToken(upper,lower,digits,special);
     }
 }
