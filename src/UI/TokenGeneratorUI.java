@@ -11,7 +11,9 @@ public class TokenGeneratorUI extends JFrame {
 
     private JTextField tokenField;
     private JButton generateButton;
+    private JButton MenuGoButton;
     private final TokenGeneratorBusiness tokenGeneratorBusiness;
+    private JPanel panel;
 
     public TokenGeneratorUI() {
         // Inicialización del negocio
@@ -24,6 +26,22 @@ public class TokenGeneratorUI extends JFrame {
         initTokenLabel();
         initTokenField();
         initGenerateButton();
+        initMenuGoButton();
+    }
+
+    //Button To go to Menu
+    private void initMenuGoButton() {
+
+        MenuGoButton = new JButton("Go to Menu");
+        MenuGoButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                LittleMenu littleMenu = new LittleMenu();
+                littleMenu.setVisible(true);
+                dispose(); //close windows 1
+            }
+        });
+        add(MenuGoButton);
     }
 
     private void setupFrame() {
