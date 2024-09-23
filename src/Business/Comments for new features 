@@ -9,3 +9,8 @@ VERSION#2 Branch NewVersion#2.0
 Renew the interface in order to have the customer select the quantity of characters.
 Also if he wants special characters or a simple password with just upper and lower characters.
 Add a little menu with the options for the new feature above described.
+
+Modifications to the VERSION#2
+First option will show as default password with values like 2 regular letters, 2 numbers, 2 digit y 2 special characters
+Add button that show a dialog, that provide the options for modification of the password/token
+Those option will be like, choosing only numbers, letters, a mix of it or mix with special characters.
